@@ -1,6 +1,8 @@
 :root {
     --blue: #0066FF;
     --black: #000000;
+    --yellow: #F9ED32;
+    --white: #ffffff;
 }
 
 body {
@@ -9,6 +11,13 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -52,7 +61,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     width: 154px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 900;
 }
 
@@ -80,7 +89,7 @@ ul {
     background-color: transparent;
     border: 0;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--black);
     transition: 0.5s all;
     cursor: pointer;
@@ -93,7 +102,7 @@ ul {
 .header__trial {
     background-color: var(--blue);
     padding: 16px;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 600;
     color: white;
     border: 1px solid var(--blue);
@@ -105,4 +114,63 @@ ul {
 .header__trial:hover {
     background-color: transparent;
     color: var(--blue);
+}
+
+.welcome {
+    max-width: 700px;
+}
+
+.welcome__title {
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.welcome__title span {
+    background-color: var(--yellow);
+}
+
+.welcome__text {
+    font-size: 1.125rem;
+    margin-bottom: 50px;
+    max-width: 580px;
+}
+
+.subscribe {
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 3px solid var(--blue);
+    border-radius: 5px;
+    font-size: 0;
+}
+
+.subscribe__input {
+    border: 0;
+    background-color: var(--white);
+    padding: 15px 13px;
+    width: 250px;
+    font-size: 0.9375rem;
+}
+
+.subscribe__input:focus-visible {
+    outline: none;
+}
+
+.subscribe__button {
+    margin: 0;
+    border: 0;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    padding: 15px 39px 15px 16px;
+}
+
+.welcome__list {
+    display: flex;
+}
+
+.welcome__item:not(:first-child) {
+    list-style-type: disc;
+    margin-left: 25px;
 }
