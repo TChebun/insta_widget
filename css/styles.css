@@ -223,3 +223,133 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+
+.double {
+    padding: 9.3rem 0;
+}
+
+.double-title__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.double-title__item {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+.double-title__item span {
+    background-color: var(--yellow);
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    columns: 3;
+    column-gap: 1.25rem;
+    margin-bottom: 6.25rem;
+}
+
+.features__wrapper {
+    background-color: #EEF1F7;
+    padding: 1.25rem;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.features__title {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.features__subtitle {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 1.875rem 0 0.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.features__subtitle i {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.increase {
+    background-image: url("/assets/3.svg");
+    width: 25px;
+    height: 19px;
+}
+
+.designers {
+    background-image: url("/assets/1.svg");
+    width: 25px;
+    height: 25px;
+}
+
+.save {
+    position: relative;
+    margin-left: 2.5rem;
+}
+
+.save::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -2.5rem;
+    margin-top: -12px;
+    background-image: url("/assets/2.svg");
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.features__text {
+    max-width: 370px;
+    font-size: 1.125rem;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.author__logo {
+    max-width: 91px;
+    margin-bottom: 1.25rem;
+}
+
+.author__text {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    max-width: 500px;
+    text-align: center;
+}
+
+.author__item {
+    display: flex;
+    align-items: center;
+}
+
+.author__item__logo {
+    max-width: 80px;
+}
+
+.author__item__text {
+    margin-left: 0.6rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.author__item__text span {
+    font-weight: 700;    
+}
